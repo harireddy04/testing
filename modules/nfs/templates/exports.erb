@@ -1,0 +1,4 @@
+/etc/exports
+<% @servers.each do |server| -%>
+/nfsshare <%= server %> (rw,sync,no_root_squash)
+<% end -%>

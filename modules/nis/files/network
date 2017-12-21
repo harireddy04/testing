@@ -1,0 +1,4 @@
+NETWORKING=yes
+HOSTNAME=localhost.localdomain
+#NOZEROCONF=yes
+NISDOMAIN=hari.com

@@ -1,0 +1,19 @@
+class nfs inherits nfs::params {
+
+exec { 'yum-update':
+  command  => '/usr/bin/yum update -y'
+}
+
+package {"${nfs::params::package_name}":
+  ensure  =>  installed,
+  require => Exec["yum-update"],
+}
+
+
+service {"${nfs::params::service_name}":
+  ensure  => 'running',
+  enable  => 'true',
+  require => Package["${nfs::params::package_name}"],
+}
+
+}

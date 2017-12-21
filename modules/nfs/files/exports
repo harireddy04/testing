@@ -1,0 +1,5 @@
+/etc/exports
+/nfsshare 192.168.0.101(rw,sync,no_root_squash)
+/nfsshare 192.168.0.101(rw,sync,no_root_squash)
+/nfsshare 192.168.0.101(rw,sync,no_root_squash)
+/nfsshare 192.168.0.101(rw,sync,no_root_squash)

@@ -1,0 +1,5 @@
+/etc/exports
+/nfsshare <%= @server1 %> (rw,sync,no_root_squash)
+/nfsshare <%= @server2 %> (rw,sync,no_root_squash)
+/nfsshare <%= @server3 %> (rw,sync,no_root_squash)
+/nfsshare <%= @server4 %> (rw,sync,no_root_squash)
